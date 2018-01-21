@@ -1,10 +1,5 @@
 # Code Book
 This file describes the variables, data and the process to tidy up the Human Activity Recognition Using Smartphones Dataset.
-
-## How to use the R script
- To use the R script, it is assumed that your working directory has a folder "UCI HAR Dataset/", which was created when you download
- this assignment data package and unzipped it. And the final tidy dataset is stored into "tidy_data.txt" under your working directory
- (assume it is the folder when you cloned this Github repos).
 ## The process to create tidy dataset
  * __Step 1__: Read training and test observation data and merge them together. **_X_all_** is the merged data.frame of all observations.
  * __Step 2__: Subtract observation data only for mean & standard devivation variables, and labels the data set with descriptive 
