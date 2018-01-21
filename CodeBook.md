@@ -11,9 +11,9 @@ This file describes the variables, data and the process to tidy up the Human Act
  * __Step 6__: Create tidy data set with the average of each variable for all subjects and activities, and store the tidy dataset to file. **_final_tidy_tbl_** stores the final tidy data.frame.
 ## Variables
 There are totally 81 variables in the final tidy data set:
-* subject
-* activity
-* tBodyAcc-mean-X
+* subject : subject ID for the observation
+* activity : what activity the subject conducted when get the observation
+* tBodyAcc-mean-X : 
 * tBodyAcc-mean-Y
 * tBodyAcc-mean-Z
 * tGravityAcc-mean-X
