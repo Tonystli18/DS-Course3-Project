@@ -1,4 +1,4 @@
-# The data files used for this project
+## The data files used for this project
 8 raw data files are used to create the tidy dataset:
  * **_X_train.txt_** : **7352** obs(observations), **561** variables. Each row has 561 data which either collected by accelerometer & gyroscope,
  or calculated based on the collected data. And the data of each row comes from a specific subject(the volunteer) who took a 
