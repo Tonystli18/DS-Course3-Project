@@ -12,3 +12,7 @@
  It also has the ID for each variables in column 1.
  * **_subject_train.txt_** : **7352** obs, **1** variables. Each row indicates the subject ID for the corresponding row in X_train.txt.
  * **_subject_test.txt_** : **2947** obs, **1** variables. Each row indicates the subject ID for the corresponding row in X_test.txt.
+## How to use the R script
+ To use the R script, it is assumed that your working directory has a folder "UCI HAR Dataset/", which was created when you download
+ this assignment data package and unzipped it. And the final tidy dataset is stored into "tidy_data.txt" under your working directory
+ (assume it is the folder when you cloned this Github repos).
