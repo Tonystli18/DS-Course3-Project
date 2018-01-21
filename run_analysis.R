@@ -41,6 +41,7 @@ x_test <- read.table(x_test_file)
 # merge training and test observations
 X_all <- rbind(x_train, x_test)
 
+
 ##
 ## The second, subtract observation data only for mean & standard
 ## devivation variables, and labels the data set with descriptive
@@ -52,21 +53,28 @@ features_file <- file.path(filepath, "features.txt")
 features <- read.table(features_file)
 features <- rename(features, featureid = V1, feature = V2) # for readable purpose
 
-# subtract the mean and standard deviation variables
-mean_features <- features[grepl("mean", features$feature), ]
-std_features <- features[grepl("std", features$feature), ]
-subset_features <- merge(mean_features, std_features, by = c("featureid","feature"), all = TRUE)
+#remove duplicated columns
+names(X_all) <- features$feature
+X_all <- X_all[, !duplicated(colnames(X_all))]
+
+# get unique feature names
+unique_features <- names(X_all)
+
+# subtract the mean and standard deviation variables from unique feature names
+mean_features <- unique_features[grepl("mean", unique_features)]
+std_features <- unique_features[grepl("std", unique_features)]
+subset_features <- append(mean_features, std_features)
 
 # select observation data only for selected features (mean and std)
-x_data <- select(X_all, subset_features$featureid) # 10299 obs, of 79 variables
+x_data <- X_all[, subset_features] # 10299 obs, of 79 variables
 
 # tidy feature names
-subset_features$feature <- gsub("\\(\\)", "", subset_features$feature)
-subset_features$feature <- gsub("BodyBody", "Body",  subset_features$feature)
-subset_features$feature <- gsub("Freq", "",  subset_features$feature)
+subset_data_names <- names(x_data)
+subset_data_names <- gsub("\\(\\)", "", subset_data_names)
+subset_data_names <- gsub("BodyBody", "Body",  subset_data_names)
 
 # labels the data set with descriptive variable names
-names(x_data) <- subset_features$feature
+names(x_data) <- subset_data_names
 
 ##
 ## The third, get activity IDs for both training and test observations
@@ -113,11 +121,7 @@ names(subject_all) <- "subject"
 ##
 ## The Fifth, Create the final dataset
 ##
-
-temp_df <- merge(subject_all, y_all, by.x = 0, by.y = 0)
-temp_df <- select(temp_df, subject, activity)
-all_data <- merge(temp_df, x_data, by.x = 0, by.y = 0)
-all_data <- all_data[ , -which(names(all_data) %in% c("Row.names"))]
+all_data <- cbind(subject_all, y_all, x_data)
 
 ##
 ## Finally, Create tidy data set with the average of each variable
@@ -131,6 +135,7 @@ tidy_table <- tbl_df(all_data)
 grouped_tbl <-group_by(tidy_table, subject, activity)
 # apply means to each subgroups and all variables
 final_tidy_tbl <- summarise_all(grouped_tbl, funs(mean))
-# export the tidy data to file
-destfile <- "tidy_data.txt"
-write.table(final_tidy_tbl, file=destfile, row.names=FALSE, col.names=TRUE, sep="\t", quote=TRUE)
+# export the tidy dataset to file
+write.table(final_tidy_tbl, file="tidy_data.txt", row.names=FALSE, col.names=TRUE, sep="\t", quote=TRUE)
+# export tidy dataset variables
+write.table(names(final_tidy_tbl), file="tidy_variables.txt", row.names=FALSE, col.names=FALSE, sep="\t", quote=TRUE)
