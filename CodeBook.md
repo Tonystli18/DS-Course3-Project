@@ -13,82 +13,82 @@ This file describes the variables, data and the process to tidy up the Human Act
 There are totally 81 variables in the final tidy data set:
 * subject : subject ID for the observation
 * activity : what activity the subject conducted when get the observation
-* tBodyAcc-mean-X : 
-* tBodyAcc-mean-Y
-* tBodyAcc-mean-Z
-* tGravityAcc-mean-X
-* tGravityAcc-mean-Y
-* tGravityAcc-mean-Z
-* tBodyAccJerk-mean-X
-* tBodyAccJerk-mean-Y
-* tBodyAccJerk-mean-Z
-* tBodyGyro-mean-X
-* tBodyGyro-mean-Y
-* tBodyGyro-mean-Z
-* tBodyGyroJerk-mean-X
-* tBodyGyroJerk-mean-Y
-* tBodyGyroJerk-mean-Z
-* tBodyAccMag-mean
-* tGravityAccMag-mean
-* tBodyAccJerkMag-mean
-* tBodyGyroMag-mean
-* tBodyGyroJerkMag-mean
-* fBodyAcc-mean-X
-* fBodyAcc-mean-Y
-* fBodyAcc-mean-Z
-* fBodyAcc-meanFreq-X
-* fBodyAcc-meanFreq-Y
-* fBodyAcc-meanFreq-Z
-* fBodyAccJerk-mean-X
-* fBodyAccJerk-mean-Y
-* fBodyAccJerk-mean-Z
-* fBodyAccJerk-meanFreq-X
-* fBodyAccJerk-meanFreq-Y
-* fBodyAccJerk-meanFreq-Z
-* fBodyGyro-mean-X
-* fBodyGyro-mean-Y
-* fBodyGyro-mean-Z
-* fBodyGyro-meanFreq-X
-* fBodyGyro-meanFreq-Y
-* fBodyGyro-meanFreq-Z
-* fBodyAccMag-mean
-* fBodyAccMag-meanFreq
-* fBodyAccJerkMag-mean
-* fBodyAccJerkMag-meanFreq
-* fBodyGyroMag-mean
-* fBodyGyroMag-meanFreq
-* fBodyGyroJerkMag-mean
-* fBodyGyroJerkMag-meanFreq
-* tBodyAcc-std-X
-* tBodyAcc-std-Y
-* tBodyAcc-std-Z
-* tGravityAcc-std-X
-* tGravityAcc-std-Y
-* tGravityAcc-std-Z
-* tBodyAccJerk-std-X
-* tBodyAccJerk-std-Y
-* tBodyAccJerk-std-Z
-* tBodyGyro-std-X
-* tBodyGyro-std-Y
-* tBodyGyro-std-Z
-* tBodyGyroJerk-std-X
-* tBodyGyroJerk-std-Y
-* tBodyGyroJerk-std-Z
-* tBodyAccMag-std
-* tGravityAccMag-std
-* tBodyAccJerkMag-std
-* tBodyGyroMag-std
-* tBodyGyroJerkMag-std
-* fBodyAcc-std-X
-* fBodyAcc-std-Y
-* fBodyAcc-std-Z
-* fBodyAccJerk-std-X
-* fBodyAccJerk-std-Y
-* fBodyAccJerk-std-Z
-* fBodyGyro-std-X
-* fBodyGyro-std-Y
-* fBodyGyro-std-Z
-* fBodyAccMag-std
-* fBodyAccJerkMag-std
-* fBodyGyroMag-std
-* fBodyGyroJerkMag-std
+* tBodyAcc-mean-X : mean value of rawdata feature 'tBodyAcc-mean()-X' of all obs for the corresponding subject & activity
+* tBodyAcc-mean-Y : mean value of rawdata feature 'tBodyAcc-mean()-X' of all obs for the corresponding subject & activity
+* tBodyAcc-mean-Z : mean value of rawdata feature 'tBodyAcc-mean()-X' of all obs for the corresponding subject & activity
+* tGravityAcc-mean-X : mean value of rawdata feature 'tBodyAcc-mean()-X' of all obs for the corresponding subject & activity
+* tGravityAcc-mean-Y : mean value of rawdata feature 'tBodyAcc-mean()-X' of all obs for the corresponding subject & activity
+* tGravityAcc-mean-Z : mean value of rawdata feature 'tBodyAcc-mean()-X' of all obs for the corresponding subject & activity
+* tBodyAccJerk-mean-X : mean value of rawdata feature 'tBodyAcc-mean()-X' of all obs for the corresponding subject & activity
+* tBodyAccJerk-mean-Y : mean value of rawdata feature 'tBodyAcc-mean()-X' of all obs for the corresponding subject & activity
+* tBodyAccJerk-mean-Z : mean value of rawdata feature 'tBodyAcc-mean()-X' of all obs for the corresponding subject & activity
+* tBodyGyro-mean-X : mean value of rawdata feature 'tBodyAcc-mean()-X' of all obs for the corresponding subject & activity
+* tBodyGyro-mean-Y : mean value of rawdata feature 'tBodyAcc-mean()-X' of all obs for the corresponding subject & activity
+* tBodyGyro-mean-Z : mean value of rawdata feature 'tBodyAcc-mean()-X' of all obs for the corresponding subject & activity
+* tBodyGyroJerk-mean-X : mean value of rawdata feature 'tBodyAcc-mean()-X' of all obs for the corresponding subject & activity
+* tBodyGyroJerk-mean-Y : mean value of rawdata feature 'tBodyAcc-mean()-X' of all obs for the corresponding subject & activity
+* tBodyGyroJerk-mean-Z : mean value of rawdata feature 'tBodyAcc-mean()-X' of all obs for the corresponding subject & activity
+* tBodyAccMag-mean : mean value of rawdata feature 'tBodyAcc-mean()-X' of all obs for the corresponding subject & activity
+* tGravityAccMag-mean : mean value of rawdata feature 'tBodyAcc-mean()-X' of all obs for the corresponding subject & activity
+* tBodyAccJerkMag-mean : mean value of rawdata feature 'tBodyAcc-mean()-X' of all obs for the corresponding subject & activity
+* tBodyGyroMag-mean : mean value of rawdata feature 'tBodyAcc-mean()-X' of all obs for the corresponding subject & activity
+* tBodyGyroJerkMag-mean : mean value of rawdata feature 'tBodyAcc-mean()-X' of all obs for the corresponding subject & activity
+* fBodyAcc-mean-X : mean value of rawdata feature 'tBodyAcc-mean()-X' of all obs for the corresponding subject & activity
+* fBodyAcc-mean-Y : mean value of rawdata feature 'tBodyAcc-mean()-X' of all obs for the corresponding subject & activity
+* fBodyAcc-mean-Z : mean value of rawdata feature 'tBodyAcc-mean()-X' of all obs for the corresponding subject & activity
+* fBodyAcc-meanFreq-X : mean value of rawdata feature 'tBodyAcc-mean()-X' of all obs for the corresponding subject & activity
+* fBodyAcc-meanFreq-Y : mean value of rawdata feature 'tBodyAcc-mean()-X' of all obs for the corresponding subject & activity
+* fBodyAcc-meanFreq-Z : mean value of rawdata feature 'tBodyAcc-mean()-X' of all obs for the corresponding subject & activity
+* fBodyAccJerk-mean-X : mean value of rawdata feature 'tBodyAcc-mean()-X' of all obs for the corresponding subject & activity
+* fBodyAccJerk-mean-Y : mean value of rawdata feature 'tBodyAcc-mean()-X' of all obs for the corresponding subject & activity
+* fBodyAccJerk-mean-Z : mean value of rawdata feature 'tBodyAcc-mean()-X' of all obs for the corresponding subject & activity
+* fBodyAccJerk-meanFreq-X : mean value of rawdata feature 'tBodyAcc-mean()-X' of all obs for the corresponding subject & activity
+* fBodyAccJerk-meanFreq-Y : mean value of rawdata feature 'tBodyAcc-mean()-X' of all obs for the corresponding subject & activity
+* fBodyAccJerk-meanFreq-Z : mean value of rawdata feature 'tBodyAcc-mean()-X' of all obs for the corresponding subject & activity
+* fBodyGyro-mean-X : mean value of rawdata feature 'tBodyAcc-mean()-X' of all obs for the corresponding subject & activity
+* fBodyGyro-mean-Y : mean value of rawdata feature 'tBodyAcc-mean()-X' of all obs for the corresponding subject & activity
+* fBodyGyro-mean-Z : mean value of rawdata feature 'tBodyAcc-mean()-X' of all obs for the corresponding subject & activity
+* fBodyGyro-meanFreq-X : mean value of rawdata feature 'tBodyAcc-mean()-X' of all obs for the corresponding subject & activity
+* fBodyGyro-meanFreq-Y : mean value of rawdata feature 'tBodyAcc-mean()-X' of all obs for the corresponding subject & activity
+* fBodyGyro-meanFreq-Z : mean value of rawdata feature 'tBodyAcc-mean()-X' of all obs for the corresponding subject & activity
+* fBodyAccMag-mean : mean value of rawdata feature 'tBodyAcc-mean()-X' of all obs for the corresponding subject & activity
+* fBodyAccMag-meanFreq : mean value of rawdata feature 'tBodyAcc-mean()-X' of all obs for the corresponding subject & activity
+* fBodyAccJerkMag-mean : mean value of rawdata feature 'tBodyAcc-mean()-X' of all obs for the corresponding subject & activity
+* fBodyAccJerkMag-meanFreq : mean value of rawdata feature 'tBodyAcc-mean()-X' of all obs for the corresponding subject & activity
+* fBodyGyroMag-mean : mean value of rawdata feature 'tBodyAcc-mean()-X' of all obs for the corresponding subject & activity
+* fBodyGyroMag-meanFreq : mean value of rawdata feature 'tBodyAcc-mean()-X' of all obs for the corresponding subject & activity
+* fBodyGyroJerkMag-mean : mean value of rawdata feature 'tBodyAcc-mean()-X' of all obs for the corresponding subject & activity
+* fBodyGyroJerkMag-meanFreq : mean value of rawdata feature 'tBodyAcc-mean()-X' of all obs for the corresponding subject & activity
+* tBodyAcc-std-X : mean value of rawdata feature 'tBodyAcc-mean()-X' of all obs for the corresponding subject & activity
+* tBodyAcc-std-Y : mean value of rawdata feature 'tBodyAcc-mean()-X' of all obs for the corresponding subject & activity
+* tBodyAcc-std-Z : mean value of rawdata feature 'tBodyAcc-mean()-X' of all obs for the corresponding subject & activity
+* tGravityAcc-std-X : mean value of rawdata feature 'tBodyAcc-mean()-X' of all obs for the corresponding subject & activity
+* tGravityAcc-std-Y : mean value of rawdata feature 'tBodyAcc-mean()-X' of all obs for the corresponding subject & activity
+* tGravityAcc-std-Z : mean value of rawdata feature 'tBodyAcc-mean()-X' of all obs for the corresponding subject & activity
+* tBodyAccJerk-std-X : mean value of rawdata feature 'tBodyAcc-mean()-X' of all obs for the corresponding subject & activity
+* tBodyAccJerk-std-Y : mean value of rawdata feature 'tBodyAcc-mean()-X' of all obs for the corresponding subject & activity
+* tBodyAccJerk-std-Z : mean value of rawdata feature 'tBodyAcc-mean()-X' of all obs for the corresponding subject & activity
+* tBodyGyro-std-X : mean value of rawdata feature 'tBodyAcc-mean()-X' of all obs for the corresponding subject & activity
+* tBodyGyro-std-Y : mean value of rawdata feature 'tBodyAcc-mean()-X' of all obs for the corresponding subject & activity
+* tBodyGyro-std-Z : mean value of rawdata feature 'tBodyAcc-mean()-X' of all obs for the corresponding subject & activity
+* tBodyGyroJerk-std-X : mean value of rawdata feature 'tBodyAcc-mean()-X' of all obs for the corresponding subject & activity
+* tBodyGyroJerk-std-Y : mean value of rawdata feature 'tBodyAcc-mean()-X' of all obs for the corresponding subject & activity
+* tBodyGyroJerk-std-Z : mean value of rawdata feature 'tBodyAcc-mean()-X' of all obs for the corresponding subject & activity
+* tBodyAccMag-std : mean value of rawdata feature 'tBodyAcc-mean()-X' of all obs for the corresponding subject & activity
+* tGravityAccMag-std : mean value of rawdata feature 'tBodyAcc-mean()-X' of all obs for the corresponding subject & activity
+* tBodyAccJerkMag-std : mean value of rawdata feature 'tBodyAcc-mean()-X' of all obs for the corresponding subject & activity
+* tBodyGyroMag-std : mean value of rawdata feature 'tBodyAcc-mean()-X' of all obs for the corresponding subject & activity
+* tBodyGyroJerkMag-std : mean value of rawdata feature 'tBodyAcc-mean()-X' of all obs for the corresponding subject & activity
+* fBodyAcc-std-X : mean value of rawdata feature 'tBodyAcc-mean()-X' of all obs for the corresponding subject & activity
+* fBodyAcc-std-Y : mean value of rawdata feature 'tBodyAcc-mean()-X' of all obs for the corresponding subject & activity
+* fBodyAcc-std-Z : mean value of rawdata feature 'tBodyAcc-mean()-X' of all obs for the corresponding subject & activity
+* fBodyAccJerk-std-X : mean value of rawdata feature 'tBodyAcc-mean()-X' of all obs for the corresponding subject & activity
+* fBodyAccJerk-std-Y : mean value of rawdata feature 'tBodyAcc-mean()-X' of all obs for the corresponding subject & activity
+* fBodyAccJerk-std-Z : mean value of rawdata feature 'tBodyAcc-mean()-X' of all obs for the corresponding subject & activity
+* fBodyGyro-std-X : mean value of rawdata feature 'tBodyAcc-mean()-X' of all obs for the corresponding subject & activity
+* fBodyGyro-std-Y : mean value of rawdata feature 'tBodyAcc-mean()-X' of all obs for the corresponding subject & activity
+* fBodyGyro-std-Z : mean value of rawdata feature 'tBodyAcc-mean()-X' of all obs for the corresponding subject & activity
+* fBodyAccMag-std : mean value of rawdata feature 'tBodyAcc-mean()-X' of all obs for the corresponding subject & activity
+* fBodyAccJerkMag-std : mean value of rawdata feature 'tBodyAcc-mean()-X' of all obs for the corresponding subject & activity
+* fBodyGyroMag-std : mean value of rawdata feature 'tBodyAcc-mean()-X' of all obs for the corresponding subject & activity
+* fBodyGyroJerkMag-std : mean value of rawdata feature 'tBodyAcc-mean()-X' of all obs for the corresponding subject & activity
