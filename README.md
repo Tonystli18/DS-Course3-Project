@@ -2,7 +2,7 @@
 * **_README.MD_** : this file
 * **_CodeBook.MD_** : file describes the process to get the final result dataset 'tidy_data.txt'
 * **_run_analyis.R_** : file R script to create final dataset in 'tidy_data.txt'
-* **_UCI HAR Dataset_** : the folder of raw dataset (which is not included in this repos)
+* **_UCI HAR Dataset_** : the folder of raw dataset which is not included in this repos, but can be downloaded from [here](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip). The files about raw data features: _'features_info.txt'_ and _'features.txt'_ can be found in this folder.
 * **_tidy_variables.txt_** : final dataset variable list
 ## The data files used for this project
 8 raw data files are used to create the tidy dataset:
