@@ -1,8 +1,8 @@
 ## How to reproduce my result
-* **1** Directly clone this Github repository to your laptop to a whatever folder you like, it will create a folder called **_'DS-Course3-Project'_**.
-* **2** Download project data and unzip it under **_'DS-Course3-Project'_**.
-* **3** Open RStudio and set the folder **_'DS-Course3-Project'_** to be your working directory.
-* **3** open _'run_analyis.R'_ to check the code and run it.
+* **Step 1** Directly clone this Github repository to your laptop to a whatever folder you like, it will create a folder called **_'DS-Course3-Project'_**.
+* **Step 2** Download project data and unzip it under **_'DS-Course3-Project'_**.
+* **Step 3** Open RStudio and set the folder **_'DS-Course3-Project'_** to be your working directory.
+* **Step 4** open _'run_analyis.R'_ to check the code and run it.
 ## File/folder list of this project
 * **_README.MD_** : this file
 * **_CodeBook.MD_** : file describes the process to get the final result dataset 'tidy_data.txt'
