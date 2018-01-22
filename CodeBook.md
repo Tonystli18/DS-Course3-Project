@@ -1,5 +1,5 @@
 # Code Book
-This file describes the variables, data and the process to create tidy dataset from the raw data of the Human Activity Recognition Using Smartphones Dataset. The variables of final dataset are about the features for mean and standard deviation in raw dataset. The data in final data set are mean values of those features and grouped by subjects and corresponding activities.
+This file describes the variables, data and the process to create tidy dataset from the raw data of the Human Activity Recognition Using Smartphones Dataset. The variables of final dataset are those features for mean and standard deviation in raw dataset. The data in final data set are calculated mean values of the selected features, and the caculations are made on observations grouped by subjects and corresponding activities.
 ## The process to create tidy dataset
  * __Step 1__: Read training and test observation data and merge them together. **_X_all_** is the merged data.frame of all observations.
  * __Step 2__: Subtract observation data only for mean & standard devivation variables, and labels the data set with descriptive 
