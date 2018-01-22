@@ -5,8 +5,10 @@
 * **_UCI HAR Dataset_** : the folder of raw dataset which is not included in this repos, but can be downloaded from [here](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip). The files about raw data features: _'features_info.txt'_ and _'features.txt'_ can be found in this folder.
 * **_tidy_variables.txt_** : final dataset variable list
 * **_tidy_data.txt_** : final tidy dataset
+## How to reproduce my result
+You can directly clone this Github repository, and set the folder as your working directory, the run _'run_analyis.R'_. But please note that, it is assumed that the raw data folder **_"UCI HAR Dataset/"_** is also put under your working directory.
 ## The raw data files used for this project
-8 raw data files under folder _'UCI HAR Dataset'_ are used to create the tidy dataset:
+8 raw data files under folder **_'UCI HAR Dataset'_** are used to create the tidy dataset:
  * **_X_train.txt_** : **7352** obs(observations), **561** variables. Each row has 561 data which either collected by accelerometer & gyroscope,
  or calculated based on the collected data. And the data of each row comes from a specific subject(the volunteer) who took a 
  specific activity.
@@ -19,7 +21,3 @@
  It also has the ID for each variables in column 1.
  * **_subject_train.txt_** : **7352** obs, **1** variables. Each row indicates the subject ID for the corresponding row in X_train.txt.
  * **_subject_test.txt_** : **2947** obs, **1** variables. Each row indicates the subject ID for the corresponding row in X_test.txt.
-## How to use the R script
- To use the R script, it is assumed that your working directory has a folder "UCI HAR Dataset/", which was created when you download
- this assignment data package and unzipped it. And the final tidy dataset is stored into "tidy_data.txt" under your working directory
- (assume it is the folder when you cloned this Github repos).
