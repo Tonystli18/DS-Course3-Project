@@ -5,8 +5,8 @@
 * **_UCI HAR Dataset_** : the folder of raw dataset which is not included in this repos, but can be downloaded from [here](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip). The files about raw data features: _'features_info.txt'_ and _'features.txt'_ can be found in this folder.
 * **_tidy_variables.txt_** : final dataset variable list
 * **_tidy_data.txt_** : final tidy dataset
-## The raw data files (under folder _UCI HAR Dataset_) used for this project
-8 raw data files are used to create the tidy dataset:
+## The raw data files used for this project
+8 raw data files under folder _'UCI HAR Dataset'_ are used to create the tidy dataset:
  * **_X_train.txt_** : **7352** obs(observations), **561** variables. Each row has 561 data which either collected by accelerometer & gyroscope,
  or calculated based on the collected data. And the data of each row comes from a specific subject(the volunteer) who took a 
  specific activity.
