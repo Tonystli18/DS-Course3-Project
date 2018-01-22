@@ -1,29 +1,12 @@
 ## 
-## This project works on 8 raw data files to create tidy data:
-## - X_train.txt : 7352 obs(observations), 561 variables. Each row has 561 data which either collected 
-##                 by accelerometer & gyroscope, or calculated based on the collected data. And the data
-##                 of each row comes from a specific subject(the volunteer) who took a specific activity.
-## - X_test.txt : 2947 obs, 561 variables. Same data structure as X_train.txt.
-## - y_train.txt : 7352 obs, 1 variables. Each row specify the activity ID for the corrsponding obs in
-##                 X_train.txt
-## - y_test.txt : 2947 obs, 1 variables. Each row specify the activity ID for the corresponding obs in
-##                X_test.txt
-## - activity_labels.txt : 6 rows, 2 variables. Activity label list. The 1st column data are activity IDs,
-##                         the 2nd are activity descriptive names
-## - features.txt : 561 obs, 2 variables. 561 Variable names which are corresponding to the 561 variables
-##                  in X_train.txt and X_test.txt. It also has the ID for each variables in column 1.
-## - subject_train.txt : 7352 obs, 1 variables. Each row indicates the subject ID for the corresponding
-##                       row in X_train.txt.
-## - subject_test.txt : 2947 obs, 1 variables. Each row indicates the subject ID for the corresponding
-##                       row in X_test.txt.
-##
-## To use this script, it is assumed that your working directory has a folder "UCI HAR Dataset/", which
-## was created when you download this assignment data package and unzipped it. And the final tidy dataset
-## is stored into "tidy_data.txt" under your working directory(assume the same folder when you cloned
-## this Github repos).
+## R script to create tidy data set from the raw data of the Human Activity Recognition Using
+## Smartphones Dataset. The data in final data set are calculated mean values of the selected
+## features, and the caculations are made on observations grouped by subjects and corresponding
+## activities. The selected variables are those features for mean and standard deviation in
+## raw dataset.
 ##
 
-# Load required packages for this assignment
+# Load required R packages for this assignment
 library(dplyr)
 # specify the raw data file path
 filepath <- file.path(getwd(), "UCI HAR Dataset/")
@@ -65,7 +48,7 @@ mean_features <- unique_features[grepl("mean", unique_features)]
 std_features <- unique_features[grepl("std", unique_features)]
 subset_features <- append(mean_features, std_features)
 
-# select observation data only for selected features (mean and std)
+# select only observation data of selected unique features
 x_data <- X_all[, subset_features] # 10299 obs, of 79 variables
 
 # tidy feature names
@@ -119,14 +102,14 @@ subject_all <- rbind(subject_train, subject_test) # 10299 obs. 1 variable
 names(subject_all) <- "subject"
 
 ##
-## The Fifth, Create the final dataset
+## The Fifth, Create the final dataset for group operation and mean calculation in last step.
 ##
 all_data <- cbind(subject_all, y_all, x_data)
 
 ##
-## Finally, Create tidy data set with the average of each variable
-## for all subjects and activities, and store the tidy dataset to
-## file.
+## Group _all_data_ set by subject & activity, and calculate the mean for all variables 
+## based on each group. The final tidy dataset 'final_tidy_tbl'_**' are stored into file
+## 'tidy_data.txt'
 ##
 
 # change to "tbl_df"
