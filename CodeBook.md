@@ -10,7 +10,7 @@ This file describes the variables, data and the process to create tidy dataset f
  * __Step 5__: The Fifth, Create the final dataset for group operation and mean calculation in last step. **_all_data_** stores all 10,299 obs with 81 variables (activity, subject ID and 79 mean and std variables)
  * __Step 6__: Group _all_data_ set by subject & activity, and calculate the mean for all variables based on each group. The final tidy dataset **_final_tidy_tbl_** are stored into file _'tidy_data.txt'_.
 ## Variables
-There are totally 81 variables in the final tidy data set. All of them have corresponding feature names in 'features.txt' of raw data. their names are similar, but remove '()' and change 'BodyBody' to 'Body'.
+There are totally 81 variables in the final tidy data set. All of them have corresponding feature names in _'features.txt'_ of raw data. You can find the meaning of these variables in file _'features_info.txt'_. The 81 variable names are similar to corresponding raw data variables, but are changed by removing '()' or replaced 'BodyBody' by 'Body'.
 * subject : subject ID for the observation
 * activity : what activity the subject conducted when get the observation
 * tBodyAcc-mean-X : mean value of rawdata feature 'tBodyAcc-mean()-X' for the corresponding subject & activity
