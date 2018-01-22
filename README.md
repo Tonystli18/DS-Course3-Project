@@ -1,3 +1,9 @@
+## File/folder list of this project
+* **_README.MD_** : this file
+* **_CodeBook.MD_** : file describes the process to get the final result dataset 'tidy_data.txt'
+* **_run_analyis.R_** : file R script to create final dataset in 'tidy_data.txt'
+* **_UCI HAR Dataset_** : the folder of raw dataset (which is not included in this repos)
+* **_tidy_variables.txt_** : final dataset variable list
 ## The data files used for this project
 8 raw data files are used to create the tidy dataset:
  * **_X_train.txt_** : **7352** obs(observations), **561** variables. Each row has 561 data which either collected by accelerometer & gyroscope,
