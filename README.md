@@ -1,3 +1,8 @@
+## How to reproduce my result
+* **1** Directly clone this Github repository to your laptop to a whatever folder you like, it will create a folder called **_'DS-Course3-Project'_**.
+* **2** Download project data and unzip it under **_'DS-Course3-Project'_**.
+* **3** Open RStudio and set the folder **_'DS-Course3-Project'_** to be your working directory.
+* **3** open _'run_analyis.R'_ to check the code and run it.
 ## File/folder list of this project
 * **_README.MD_** : this file
 * **_CodeBook.MD_** : file describes the process to get the final result dataset 'tidy_data.txt'
@@ -5,8 +10,6 @@
 * **_UCI HAR Dataset_** : the folder of raw dataset which is not included in this repos, but can be downloaded from [here](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip). The files about raw data features: _'features_info.txt'_ and _'features.txt'_ can be found in this folder.
 * **_tidy_variables.txt_** : final dataset variable list
 * **_tidy_data.txt_** : final tidy dataset
-## How to reproduce my result
-You can directly clone this Github repository, and set the folder as your working directory, the run _'run_analyis.R'_. But please note that, it is assumed that the raw data folder **_"UCI HAR Dataset/"_** is also put under your working directory.
 ## The raw data files used for this project
 8 raw data files under folder **_'UCI HAR Dataset'_** are used to create the tidy dataset:
  * **_X_train.txt_** : **7352** obs(observations), **561** variables. Each row has 561 data which either collected by accelerometer & gyroscope, or calculated based on the collected data. And the data of each row comes from a specific subject(the volunteer) who took a 
