@@ -2,7 +2,7 @@
 * **Step 1:** Directly clone this Github repository to your laptop to a whatever folder you like, it will create a folder called **_'DS-Course3-Project'_**.
 * **Step 2:** Download project data and unzip it under **_'DS-Course3-Project'_**.
 * **Step 3:** Open RStudio and set the folder **_'DS-Course3-Project'_** to be your working directory.
-* **Step 4:** run _'run_analyis.R'_ to get the result.
+* **Step 4:** Open _'run_analyis.R'_ and run it. You'll get the result under Global environment in variable **_final_tidy_tbl_**.
 ## File/folder list of this project
 * **_README.MD_** : this file
 * **_CodeBook.MD_** : file describes the process to get the final result dataset 'tidy_data.txt'
